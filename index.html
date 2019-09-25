@@ -8,7 +8,7 @@
     <style>
         
         #topright {
-            position: absolute;
+            position:initial;
             right: 0%;
             top: 0%;
             width: 20%;
@@ -52,22 +52,42 @@
         input:hover{
             background-color: yellow;
         }
+       img{
+            line-height:10px;
+            display: block;
+       }
+    
+       @media (max-width: 860px) {
+        .color {
+            width: 55%;
+            font-size: 35;
+            background: blanchedalmond;
+            }
+        }
+        @media (max-width: 860px) {
+        .Tcolor {
+            width: 55%;
+            font-size: 35;
+            background: blanchedalmond;
+            }
+        }
     </style>
 </head>
 <body>
-    <div>
-        <img id='topright' src="name.jpg" alt="My pic">
-        <div>
-    <h1 class='header'>Curriculum Vitae of Arif</h1>
+
+        
+    <div style='position: relative'>
+    <h1 class='header color'>Curriculum Vitae of Arif</h1>
+    <img id='topright' src="name.jpg" alt="My pic">
     <h2 >Contact No. : - +8801814715110 </h2>
     <h2> E-mail:-  arif1881996@gmail.com</h2>>
-
+    </div>
     <h1 class='header'>CAREER OBJECTIVE <h1>
     <p>
         To work in a firm with a professional work driven environment where I can utilize and apply my knowledge, skills which would enable me as a fresh graduate to grow while fulfilling organizational goals.
     </p>
-
-    <table border="1">
+    
+    <table class='Tcolor' border="1">
             <tr>
                 <th>Qualification</th>
                 <th>Board/University</th>
