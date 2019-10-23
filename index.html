@@ -6,26 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        img{
-            width: 25%;
-            height: 25%;
+        
+        #topright {
+            position:initial;
+            right: 0%;
+            top: 0%;
+            width: 20%;
+            height: 20%;
+            display: block;
+            border: black;
+            
+        } 
+        .header{
+            background-color: #668284;
+        }
+        body{
+            background-color: 	rgb(180, 238, 180); 
+        }   
+        table
+        {
+            border: 1px dashed black;
+        }
+        tr{
+            padding: 2px;
+            border: 1px solid rgb(1, 53, 44); 
+        }
+        td
+        {
+            padding: 2px;
+            border: 1px solid rgb(1, 53, 44);
+        }
+        form{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+             text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button4 {font-size: 20px;}
+        input:hover{
+            background-color: yellow;
+        }
+       img{
+            line-height:10px;
+            display: block;
+       }
+    
+       @media (max-width: 860px) {
+        .color {
+            width: 55%;
+            font-size: 35;
+            background: blanchedalmond;
+            }
+        }
+        @media (max-width: 860px) {
+        .Tcolor {
+            width: 55%;
+            font-size: 35;
+            background: blanchedalmond;
+            }
         }
     </style>
 </head>
 <body>
-    <div>
-        <img src="name.jpg" alt="My pic">
-        <div>
-    <h1>Curriculum Vitae of Arif</h1>
-    <h2>Contact No. : - +8801814715110 </h2>
-    <h2> E-mail:-  arif1881996@gmail.com</h2>>
 
-    <h1>CAREER OBJECTIVE <h1>
+        
+    <div style='position: relative'>
+    <h1 class='header color'>Curriculum Vitae of Arif</h1>
+    <img id='topright' src="name.jpg" alt="My pic">
+    <h2 >Contact No. : - +8801814715110 </h2>
+    <h2> E-mail:-  arif1881996@gmail.com</h2>>
+    </div>
+    <h1 class='header'>CAREER OBJECTIVE <h1>
     <p>
         To work in a firm with a professional work driven environment where I can utilize and apply my knowledge, skills which would enable me as a fresh graduate to grow while fulfilling organizational goals.
     </p>
-
-    <table border="1">
+    
+    <table class='Tcolor' border="1">
             <tr>
                 <th>Qualification</th>
                 <th>Board/University</th>
@@ -39,18 +101,17 @@
                 <td>3.3</td>
             </tr>
     </table>
-
+    <p class='header'> Projects <p></p>
     <ul>
-        <p> Projects <p>
+        
             <li>Personal Financial Business Management</li>
             <li>A Comparative Study on Disaster Detection from Social Media Images using Deep Learning</ligit>
-    </ul>>
+            <p> My GitHub link <a href =https://github.com/Arif159357?tab=repositories >My Github</a></p>    
+    </ul>
 
-    <a href =https://github.com/Arif159357?tab=repositories >My Github</a>
+   
     <form action="/action_page.php">
-        First name: <input type="text" name="FirstName"><br>
-        Last name: <input type="text" name="LastName" ><br>
-        <input type="submit" value="Submit">
+        <input class='button4'type="submit" value="Submit">
         </form>
     
 </body>
